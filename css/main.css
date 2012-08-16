@@ -1,0 +1,186 @@
+/* Color Key
+Black- #000
+White- #FFF
+Orange- #FFA500
+*/
+                                                           
+@font-face {
+    font-family: "Metal Mania", cursive;
+    font-family: Sunshiney, cursive;
+}
+
+body {
+	margin: 0 auto;
+	width: 90%;
+    background: url(../images/pyramid.png);
+    line-height: 2.5em;        
+    font-size: 62.5%;
+}
+
+h1 {
+	float: left;
+	color: #FFA500;
+	font-weight: bold;
+	text-shadow: 0.2em 0.3em 0.1em #CCC;
+	font-family: Sunshiney;
+    font-size: 3.2em; /* 32px/10px */
+  /*-ms-font-family: Sunshiney;
+   -moz-font-family: Sunshiney;
+     -o-font-family: Sunshiney;
+-webkit-font-family: Sunshiney;*/
+
+}
+
+h2, h3 {
+    clear: both;
+    font-family: "Metal Mania";
+    text-shadow: 0.2em 0.3em 0.1em #CCC;
+    font-size: 2em; /* 20px/10px */
+}
+
+p {
+    clear: both;
+    font-family: "Metal Mania";
+    text-shadow: 0.2em 0.3em 0.1em #CCC;
+    font-size: 1.6em; /* 16px/10px */
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul a:hover {
+	color: #000;
+}
+
+ul li {
+    list-style-type: none;
+	margin-bottom: 10px;
+}
+
+div img {
+    width: 400px; /* Applies to only Sinbad pic */
+}
+
+img {
+    max-width: 100%; /* Applies to all pics */
+}
+
+#nav ul {
+	float: right;
+	width: 33.333%;
+}
+
+#nav ul li {
+	width: 25%;
+	float: left;
+}
+
+#nav ul li a {
+    color: #FFF;
+    background-color: #FFA500;
+    display: block;
+    text-align: center;
+}
+
+#nav a:hover {
+    background: #000;
+}
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 46.875%; /* 450px/960px */
+}
+
+#gallery li {
+    padding: .666667%; /* 3px/450px */
+    float: left;
+}
+
+#main-content {
+    clear: both;
+    float: left;
+    width: 52.083333%; /* 500px/960px */
+   
+}
+
+#warming-up {
+    float: right;
+    width: 36.4583333%; /* 350px/960px */
+    margin-right: .625%; /* 60px/960px */
+}
+
+#cool {
+    float: left;
+    width: 52.083333%; /* 500px/960px */
+}
+
+#finale {
+    float: right;
+    width: 36.4583333%; /* 350px/960px */
+    margin-right: .625%; /* 60px/960px */
+}
+
+#sun  {
+    padding: 0.1298701%; /* 5px/385px */
+    float: left;
+    width: 40.104167%; /* 385px/960px */
+    border: 5px double #000;
+}
+
+#closer {
+    text-align: center;
+}
+
+/* 			Media Queries 			*/
+
+@media screen and (max-width: 700px) {
+	#nav ul li a {
+		float: none;
+	}
+	
+	#nav ul {
+		margin-right: 66%; /* Random Number */
+	}
+	
+	#warming-up, #main-content, #cool, #sun, #finale, #gallery {
+		width: inherit;
+		float: none;
+	}
+	
+	#gallery li {
+		padding: 4.444444%; /* 20px/450px */
+	}
+	
+	#sun {
+		border: none;
+	}
+	
+	
+}
+
+@media screen and (max-width: 672px) {
+	#gallery li {
+		padding: 2.222222%; /* 10px/450px */
+	}
+	
+}
+
+/* Fixes liger images from breaking somewhat */
+@media screen and (max-width: 570px) { 
+	#gallery li {
+		float: none;
+		padding: .444444%; /* 2px/450px */
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#nav ul li {
+		width: 300%; /* Random Number */
+	}
+	
+
+/*          End media Query      */                                                           
